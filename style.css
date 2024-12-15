@@ -14,13 +14,28 @@ body {
     margin: 20px 0;
 }
 
+
+.marquee {
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 20px 0;
+}
+
 .gallery {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
     gap: 30px;
     padding: 2px;
+    animation: scroll 15s linear infinite;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
 }
 
 .photo {
