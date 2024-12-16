@@ -16,7 +16,7 @@ body {
 
 
 .marquee {
-    overflow: hidden;
+    overflow: show;
     width: 100%;
     box-sizing: border-box;
     margin: 20px 0;
@@ -26,7 +26,7 @@ body {
     display: flex;
     gap: 30px;
     padding: 2px;
-    animation: scroll 15s linear infinite;
+    animation: scroll 10s linear infinite;
 }
 
 @keyframes scroll {
@@ -46,8 +46,8 @@ body {
 }
 
 .photo img {
-    width: 100%;
-    height: 90%;
+    width: 88%;
+    height: 80%;
     display: block;
 }
 
@@ -63,7 +63,8 @@ body {
     border-color: #22d3e3;
     height: auto;
     width: 400px;
-    transform: rotate(360deg);
+    transform: rotate(180deg);
+    cursor: pointer;
 }
 
 .photo:hover p {
